@@ -1,0 +1,265 @@
+{
+  "nb02_load_lexicon": {
+    "source_notebook": "notebooks/02_Silverrr_Labeling_dan_SentencePair.ipynb",
+    "cell_index": 14,
+    "needles": [
+      "def load_lexicon"
+    ],
+    "sha256": "aa28b521b391cf733d6feba3fc94527ba524aa12d8f31f78e9d2af93d7caf698",
+    "n_lines": 28
+  },
+  "nb02_scorer": {
+    "source_notebook": "notebooks/02_Silverrr_Labeling_dan_SentencePair.ipynb",
+    "cell_index": 16,
+    "needles": [
+      "def score_sentence",
+      "def score_to_label",
+      "NEGATION_WINDOW = 2"
+    ],
+    "sha256": "3b4fe04b8eef1fcc23efe1d6d7aa544b0098f9971bbdbd5f7254a7b5206d9a2d",
+    "n_lines": 60
+  },
+  "nb02_score_windowed": {
+    "source_notebook": "notebooks/02_Silverrr_Labeling_dan_SentencePair.ipynb",
+    "cell_index": 17,
+    "needles": [
+      "def score_windowed"
+    ],
+    "sha256": "79d821a84e64f152a28740a368c2a54ce94209837d1c636c42391276b5fcb552",
+    "n_lines": 30
+  },
+  "nb02_detect_aspect": {
+    "source_notebook": "notebooks/02_Silverrr_Labeling_dan_SentencePair.ipynb",
+    "cell_index": 19,
+    "needles": [
+      "def detect_aspect",
+      "ASPECT_KEYWORDS = json.load"
+    ],
+    "sha256": "b59ccaa6f39c8e3bdf8aa893813aa3d895fa7719698b0f40bc749624bbeafdc3",
+    "n_lines": 27
+  },
+  "nb02_labeling_loop": {
+    "source_notebook": "notebooks/02_Silverrr_Labeling_dan_SentencePair.ipynb",
+    "cell_index": 23,
+    "needles": [
+      "silver_rows = []",
+      "THRESHOLD = BEST_THETA"
+    ],
+    "sha256": "55acd499572ccb527adf5f081d84afc6bf3e2cd6094c5eddc3f928e35dea45e2",
+    "n_lines": 33
+  },
+  "nb02_aspect_desc": {
+    "source_notebook": "notebooks/02_Silverrr_Labeling_dan_SentencePair.ipynb",
+    "cell_index": 28,
+    "needles": [
+      "ASPECT_DESCRIPTIONS = {",
+      "LABEL_MAP = {"
+    ],
+    "sha256": "130e47e4df4c259ba80d48d95692dfe5868eaeaba0624e087eaa0d6a44d88a82",
+    "n_lines": 20
+  },
+  "nb02_build_pairs": {
+    "source_notebook": "notebooks/02_Silverrr_Labeling_dan_SentencePair.ipynb",
+    "cell_index": 31,
+    "needles": [
+      "def build_pairs"
+    ],
+    "sha256": "a08a72329052d8f332ce9d43c3d515cb9d5cf35bb7493810894dcbf0fc9b5cdb",
+    "n_lines": 39
+  },
+  "nb03_dataset": {
+    "source_notebook": "notebooks/03_FineTuning_3_Model.ipynb",
+    "cell_index": 8,
+    "needles": [
+      "class SentencePairDataset"
+    ],
+    "sha256": "d62d457191f8adaf5883371b62a3453eea23f5382b5efde243a06f73f8c9bb97",
+    "n_lines": 35
+  },
+  "nb03_train_functions": {
+    "source_notebook": "notebooks/03_FineTuning_3_Model.ipynb",
+    "cell_index": 10,
+    "needles": [
+      "def set_seed",
+      "def train_epoch",
+      "def evaluate",
+      "def save_predictions"
+    ],
+    "sha256": "14feed23fd83b44729cca44ef86b7534d2cf09b99a0a482bd8c2f41212c329aa",
+    "n_lines": 109
+  },
+  "nb03_aggregate_seeds": {
+    "source_notebook": "notebooks/03_FineTuning_3_Model.ipynb",
+    "cell_index": 15,
+    "needles": [
+      "def aggregate_seeds"
+    ],
+    "sha256": "e9901430755516c47b6a2896291655218ed5cd142d2322ce94e59b4f627a4021",
+    "n_lines": 49
+  },
+  "nb04_analysis_frame": {
+    "source_notebook": "notebooks/04_Diversity_Analysis.ipynb",
+    "cell_index": 5,
+    "needles": [
+      "df_analysis = df_dev[",
+      "rename(columns={'pred_label': f'pred_{model_name}'})"
+    ],
+    "sha256": "1da11187bfb4ba7eec20879816479fd465c8086c812e079bbfaa88a46368f563",
+    "n_lines": 13
+  },
+  "nb04_disagreement": {
+    "source_notebook": "notebooks/04_Diversity_Analysis.ipynb",
+    "cell_index": 10,
+    "needles": [
+      "def disagreement_rate",
+      "disagr_matrix = pd.DataFrame"
+    ],
+    "sha256": "ac332c12c3e72df89be94a46f54af4c2288da16ac70784e2856bf3bc50c0c8ae",
+    "n_lines": 25
+  },
+  "nb05_weights": {
+    "source_notebook": "notebooks/05_Ensemble_Voting.ipynb",
+    "cell_index": 14,
+    "needles": [
+      "PENTING: bobot dihitung dari DEV set",
+      "model_weights = {asp: {} for asp in ASPECTS}"
+    ],
+    "sha256": "5f3efdf2c3fe36fb7bbc9a0c031b1c4c52262d827b5ccd843772006346a339b0",
+    "n_lines": 28
+  },
+  "nb05_vectorized_ensemble": {
+    "source_notebook": "notebooks/05_Ensemble_Voting.ipynb",
+    "cell_index": 17,
+    "needles": [
+      "def vectorized_ensemble_gpu"
+    ],
+    "sha256": "be047d1558df3dec09d26130500480cb1c5f5e18adf3fba408fbfe4988a22999",
+    "n_lines": 98
+  },
+  "nb05_run_ensemble": {
+    "source_notebook": "notebooks/05_Ensemble_Voting.ipynb",
+    "cell_index": 19,
+    "needles": [
+      "available_models = [m for m in MODELS if m in test_preds]",
+      "results = vectorized_ensemble_gpu("
+    ],
+    "sha256": "4f1e74504c8582999244649c5f25db22c31810ee31041609f7697f277c0ba62b",
+    "n_lines": 28
+  },
+  "nb05_ensemble_frame": {
+    "source_notebook": "notebooks/05_Ensemble_Voting.ipynb",
+    "cell_index": 20,
+    "needles": [
+      "ensemble_rows = []",
+      "ens_path = os.path.join(PRED_DIR, 'ensemble_test.csv')"
+    ],
+    "sha256": "83cc101feba3b92ac896a96e6c5a60b2e0e2bb9a4c2cf7aa20e5379cbea1a68a",
+    "n_lines": 41
+  },
+  "nb05b_helpers": {
+    "source_notebook": "notebooks/05B_Ensemble_Optimization.ipynb",
+    "cell_index": 6,
+    "needles": [
+      "def compute_metrics",
+      "def weighted_soft_vote_aspect",
+      "def make_power_weights"
+    ],
+    "sha256": "a05d15eb5532640e58d2a02356e82d1ac4f5f7752f8f293709e4410ffdf45759",
+    "n_lines": 88
+  },
+  "nb05b_weights": {
+    "source_notebook": "notebooks/05B_Ensemble_Optimization.ipynb",
+    "cell_index": 8,
+    "needles": [
+      "model_weights_dev = {asp: {} for asp in ASPECTS}"
+    ],
+    "sha256": "33284653993aa73ad9d2b946309b4fd1237e8246be5a3104654deb2cb304c0ca",
+    "n_lines": 26
+  },
+  "nb05b_diag": {
+    "source_notebook": "notebooks/05B_Ensemble_Optimization.ipynb",
+    "cell_index": 10,
+    "needles": [
+      "y_true = df_test['label'].values",
+      "probs_all = {m: get_probs(m"
+    ],
+    "sha256": "7f0f216aff02f6eba1af343a4e55d460a95244d596c3de28c8e12330a5f991fa",
+    "n_lines": 35
+  },
+  "nb05b_exp0_baselines": {
+    "source_notebook": "notebooks/05B_Ensemble_Optimization.ipynb",
+    "cell_index": 12,
+    "needles": [
+      "all_results = {}",
+      "03_SoftVote_linear_NB05_baseline"
+    ],
+    "sha256": "46a99cd7bfc0a3aaa5abe8421e315f1610fac2e25fe85ba7ea0b135e5ba60333",
+    "n_lines": 20
+  },
+  "nb05b_exp1_subsets": {
+    "source_notebook": "notebooks/05B_Ensemble_Optimization.ipynb",
+    "cell_index": 13,
+    "needles": [
+      "EKSPERIMEN 1 — Subset 2 Model"
+    ],
+    "sha256": "d2f9fc481b71eabc04dbd99e3f11ea334127be9562395e2726751929aaad71b4",
+    "n_lines": 21
+  },
+  "nb05b_exp2_power": {
+    "source_notebook": "notebooks/05B_Ensemble_Optimization.ipynb",
+    "cell_index": 14,
+    "needles": [
+      "EKSPERIMEN 2 — Power Weighting"
+    ],
+    "sha256": "180430dd28eabc4066a31be166d6691bd5a94f276d2a4b0d2107f7abd5494eca",
+    "n_lines": 23
+  },
+  "nb05b_exp3_temperature": {
+    "source_notebook": "notebooks/05B_Ensemble_Optimization.ipynb",
+    "cell_index": 15,
+    "needles": [
+      "EKSPERIMEN 3 — Temperature Scaling"
+    ],
+    "sha256": "163b039dd4909631c148790b1359d7ef0e584fdf3bc099ff52235ee62acf3e5e",
+    "n_lines": 45
+  },
+  "nb05b_exp4_combo": {
+    "source_notebook": "notebooks/05B_Ensemble_Optimization.ipynb",
+    "cell_index": 16,
+    "needles": [
+      "EKSPERIMEN 4 — Kombinasi Power Weight"
+    ],
+    "sha256": "63dd1d85d9cee275d27633cf87a803d1806da5d0b174eae6e0bc8a295b740d8e",
+    "n_lines": 27
+  },
+  "nb06_prompt": {
+    "source_notebook": "notebooks/06_LLM_as_Judge.ipynb",
+    "cell_index": 7,
+    "needles": [
+      "ASPECT_DESCRIPTIONS",
+      "def build_prompt",
+      "def needs_llm_judge"
+    ],
+    "sha256": "4df964f27ed5f80f0a2be2dcd58dac1fc39c521fecddfdff37c2f0c6d642755f",
+    "n_lines": 33
+  },
+  "nb06_call_llm": {
+    "source_notebook": "notebooks/06_LLM_as_Judge.ipynb",
+    "cell_index": 9,
+    "needles": [
+      "def call_llm"
+    ],
+    "sha256": "7e6068144b2eba5bdb3e8d7a2b5870e51783ff0fd24c0aa95a5949ffc73834cb",
+    "n_lines": 103
+  },
+  "rev04_baseline_prompt": {
+    "source_notebook": "revision/04_llm_reproducibility_and_baselines.ipynb",
+    "cell_index": 5,
+    "needles": [
+      "BASELINE_SRC = "
+    ],
+    "extract": "ast literal of BASELINE_SRC",
+    "sha256": "cb8f2c70ff3bf3cb46cfbd9359e5c11a73ea5ff7b8bb3a6f28a5ab8ef3e9da16",
+    "n_lines": 12
+  }
+}

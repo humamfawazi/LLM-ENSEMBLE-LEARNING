@@ -1,0 +1,41 @@
+{
+  "created_at": "2026-10-26T18:12:10+00:00",
+  "method": "score_sentence",
+  "theta": 15.0,
+  "text_version": "text_v1",
+  "distribution": {
+    "tidak_disebutkan": 93203,
+    "netral": 48215,
+    "negatif": 4812,
+    "positif": 4758
+  },
+  "n_changed_vs_old": 29284,
+  "labeling_cell_sha256": "55acd499572ccb527adf5f081d84afc6bf3e2cd6094c5eddc3f928e35dea45e2",
+  "outputs": {
+    "silver_labeled_s15.csv": "b525c713c359f87b1e99d95660a325d2da85bb183f5345750dab5edaad369735",
+    "train_pairs.csv": "3a930e7ab43608c31e57d4a913db9e3431c427d450c66f2021cbe7eef37a3458"
+  },
+  "inputs": {
+    "tweets_preprocessed.csv": "87a2b09ecbf2a2fe8eef3f0c542f6c0e5718f8923cbb1dfb0b57f83e5cb5f396",
+    "gold_tweet_ids.csv": "e3721fbb6d42e5010be04f25f070b5147ff495fc039451f54393f96b0c5fc6f4",
+    "silver_labeled.csv": "86c1a8282b984e945ee94d2b1133b751d02dd40fca29937bdecf7b40111ab266",
+    "train_pairs.csv": "d2c41c244821d6c4b8db9792216afd51512d49cf22b19515daff494b2e817ba6",
+    "aspect_keywords.json": "ccf4ae7ae0386857341dd915e7b37f396a7fd8b878304692e27d9696aca2bd4f",
+    "positive.tsv": "4d0dc2a6b2fe88a438fe5a61663f45c5cf60ebaeb019d4ca4d31c3315121c2ae",
+    "negative.tsv": "b8d4b231077967d07ae07014b9dcea255301c2b17a2452c215e3d810a4ba3be4"
+  },
+  "environment": {
+    "python": "3.12.10",
+    "platform": "Windows-11-10.0.26100-SP0",
+    "numpy": "2.3.3",
+    "pandas": "2.3.3",
+    "torch": "2.6.0+cu124",
+    "cuda_available": true,
+    "transformers": "5.14.1",
+    "sklearn": "1.8.0",
+    "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+    "gpu_memory_gb": 6.4,
+    "cuda": "12.4",
+    "cudnn": 90100
+  }
+}

@@ -1,0 +1,27 @@
+# Internal pre-release check (contains tweet fragments) — never commit
+CHECK_REPORT.md
+
+# Secrets
+.env
+*.env
+
+# Rehydrated tweet texts and files built from them (must not be redistributed)
+data/processed/
+data/gold/
+data/pairs/
+data_round3/
+
+# Third-party lexicon (download from its source; see README)
+resources/inset_lexicon/
+
+# Pipeline working outputs, checkpoints and LLM caches (contain tweet texts / model weights)
+outputs_round3/
+*.safetensors
+*.bin
+*.pt
+llm_cache/
+
+# Python / Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/

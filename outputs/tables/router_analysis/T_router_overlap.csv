@@ -1,0 +1,5 @@
+﻿router,irisan dengan (a) pada anggaran 57,Jaccard
+"(a) router utama (vote terpecah, lalu margin terkecil)",57,1.0
+(b) confidence IndoBERT terendah,25,0.2808988764044944
+(c) confidence soft voting terendah,48,0.7272727272727273
+(d) entropi soft voting tertinggi,42,0.5833333333333334

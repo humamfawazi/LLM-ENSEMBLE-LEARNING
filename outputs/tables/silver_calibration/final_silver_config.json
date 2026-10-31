@@ -1,0 +1,7 @@
+{
+  "metode": "score_sentence",
+  "theta": 15.0,
+  "macro_f1_validasi": 0.407946127946128,
+  "labeling_cell_sha256": "55acd499572ccb527adf5f081d84afc6bf3e2cd6094c5eddc3f928e35dea45e2",
+  "n_label_berubah": 29284
+}

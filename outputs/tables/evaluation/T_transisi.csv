@@ -1,0 +1,6 @@
+﻿kelompok,n,benar→benar (tetap),salah→benar (diperbaiki),benar→salah (dirusak),"salah→salah, label diubah","salah→salah, label tetap",akurasi sebelum,akurasi sesudah
+retain,16.0,11.0,0.0,0.0,0.0,5.0,0.6875,0.6875
+revise,41.0,1.0,33.0,4.0,2.0,1.0,0.12195121951219512,0.8292682926829268
+ditandai (retain+revise),57.0,12.0,33.0,4.0,2.0,6.0,0.2807017543859649,0.7894736842105263
+auto_accept,503.0,389.0,0.0,0.0,0.0,114.0,0.7733598409542743,0.7733598409542743
+semua,560.0,401.0,33.0,4.0,2.0,120.0,0.7232142857142857,0.775

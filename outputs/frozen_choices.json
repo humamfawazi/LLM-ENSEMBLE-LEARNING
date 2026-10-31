@@ -1,0 +1,336 @@
+{
+  "created_at": "2026-10-30T00:38:09+00:00",
+  "smoke": false,
+  "runs_root": "outputs_round3/runs",
+  "plan_sha256": "a6a25282b35c3c7fd27cbfb6510b8c12f1fc8411178caf353a854ac1c521235d",
+  "config": {
+    "SILVER_METHOD": "score_sentence",
+    "SILVER_THETA": 15.0,
+    "TEXT_VERSION": "text_v1",
+    "MODELS": {
+      "indobert": "indobenchmark/indobert-base-p1",
+      "xlm_roberta": "xlm-roberta-base",
+      "mbert": "bert-base-multilingual-cased"
+    },
+    "SEEDS": [
+      42,
+      123,
+      7
+    ],
+    "LEARNING_RATE": 2e-05,
+    "BATCH_SIZE": 4,
+    "GRADIENT_ACCUMULATION_ACTIVE": false,
+    "FP16_ACTIVE": false,
+    "NUM_EPOCHS": 4,
+    "MAX_LENGTH": 80,
+    "WEIGHT_DECAY": 0.01,
+    "WARMUP_RATIO": 0.1,
+    "GRAD_CLIP_NORM": 1.0,
+    "NUM_LABELS": 4,
+    "EARLY_STOPPING": false,
+    "MARGIN_THRESHOLD": 0.15,
+    "LLM_MODEL": "qwen3.7-max-2026-06-08",
+    "LLM_TEMPERATURE": 0.0,
+    "LLM_MAX_TOKENS": 256,
+    "LLM_EXTRA_BODY": {
+      "enable_thinking": false
+    }
+  },
+  "runs": {
+    "indobert_seed42": {
+      "dir": "outputs_round3/runs/indobert_seed42",
+      "model_id": "indobenchmark/indobert-base-p1",
+      "best_model_path": "outputs_round3/runs/indobert_seed42/best/model.safetensors",
+      "best_model_sha256": "3cda52809fb1d2e7fea98d1ad95778d953c0c7ae58127c629beaee2c6df8faf5",
+      "dev_predictions_sha256": "f2a4716e9e1e8eddc86c599fa81e01bc9a5dbeeac38462508299ed4335ee4e6d",
+      "best_epoch": 2,
+      "best_dev_f1": 0.4069,
+      "total_train_seconds": 16145.3,
+      "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "torch": "2.6.0+cu124",
+      "transformers": "5.14.1",
+      "smoke": false
+    },
+    "indobert_seed123": {
+      "dir": "outputs_round3/runs/indobert_seed123",
+      "model_id": "indobenchmark/indobert-base-p1",
+      "best_model_path": "outputs_round3/runs/indobert_seed123/best/model.safetensors",
+      "best_model_sha256": "fe79e2c80131df61caaddb21fe0bf625fece15517e00bcdf2471715bba9f62e1",
+      "dev_predictions_sha256": "483ddfda245371b860dba4e25f179209affa14f31796cab27553966dd6ac6f5c",
+      "best_epoch": 2,
+      "best_dev_f1": 0.42,
+      "total_train_seconds": 16173.2,
+      "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "torch": "2.6.0+cu124",
+      "transformers": "5.14.1",
+      "smoke": false
+    },
+    "indobert_seed7": {
+      "dir": "outputs_round3/runs/indobert_seed7",
+      "model_id": "indobenchmark/indobert-base-p1",
+      "best_model_path": "outputs_round3/runs/indobert_seed7/best/model.safetensors",
+      "best_model_sha256": "8a2c89e04e833b3402208bf0a260ab55e2c557346c7338741dd785ee40c8b0d0",
+      "dev_predictions_sha256": "435b8e62f2fa4a5c0e6cc64445249b6b2c57cbebf00b0f6ff68441bf278ae1e2",
+      "best_epoch": 1,
+      "best_dev_f1": 0.4316,
+      "total_train_seconds": 16137.3,
+      "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "torch": "2.6.0+cu124",
+      "transformers": "5.14.1",
+      "smoke": false
+    },
+    "xlm_roberta_seed42": {
+      "dir": "outputs_round3/runs/xlm_roberta_seed42",
+      "model_id": "xlm-roberta-base",
+      "best_model_path": "outputs_round3/runs/xlm_roberta_seed42/best/model.safetensors",
+      "best_model_sha256": "b7bca43626c1c39c0cb58ebde7d109e421a58a37bf26b9c3578bf72e60b54a26",
+      "dev_predictions_sha256": "ea8b58e328f55c7279d7868be545ead242a10f58618714297a89970ff35569aa",
+      "best_epoch": 4,
+      "best_dev_f1": 0.2897,
+      "total_train_seconds": 48894.0,
+      "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "torch": "2.6.0+cu124",
+      "transformers": "5.14.1",
+      "smoke": false
+    },
+    "xlm_roberta_seed123": {
+      "dir": "outputs_round3/runs/xlm_roberta_seed123",
+      "model_id": "xlm-roberta-base",
+      "best_model_path": "outputs_round3/runs/xlm_roberta_seed123/best/model.safetensors",
+      "best_model_sha256": "3c030afbfc5bed33fd4ce4f97cd55025049a9e11d49d31ecb289ed29a8cea3ba",
+      "dev_predictions_sha256": "1de863e973276a29e5fa251445c861b9f8c4a0b1396bf803bfa4650f19a1099a",
+      "best_epoch": 2,
+      "best_dev_f1": 0.439,
+      "total_train_seconds": 48944.8,
+      "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "torch": "2.6.0+cu124",
+      "transformers": "5.14.1",
+      "smoke": false
+    },
+    "xlm_roberta_seed7": {
+      "dir": "outputs_round3/runs/xlm_roberta_seed7",
+      "model_id": "xlm-roberta-base",
+      "best_model_path": "outputs_round3/runs/xlm_roberta_seed7/best/model.safetensors",
+      "best_model_sha256": "385780db207922758cfeb5347c6066c68866dfdbe79a1671104b6dd04644c3b6",
+      "dev_predictions_sha256": "cae7b479c602d4807cb2acb6eaa9ab7ad5ea68955fb78d3965a0e13168cfa1e8",
+      "best_epoch": 4,
+      "best_dev_f1": 0.447,
+      "total_train_seconds": 49032.9,
+      "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "torch": "2.6.0+cu124",
+      "transformers": "5.14.1",
+      "smoke": false
+    },
+    "mbert_seed42": {
+      "dir": "outputs_round3/runs/mbert_seed42",
+      "model_id": "bert-base-multilingual-cased",
+      "best_model_path": "outputs_round3/runs/mbert_seed42/best/model.safetensors",
+      "best_model_sha256": "1e4c45c261b37b56e12b6f3dbf6376309b05f3fbd9a85ac2a2f874f222601b1e",
+      "dev_predictions_sha256": "7fdbe1766ca39f5c9728f488ed5d5b0c515cd322af0ef88284c51b44fdb38668",
+      "best_epoch": 4,
+      "best_dev_f1": 0.4273,
+      "total_train_seconds": 20604.7,
+      "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "torch": "2.6.0+cu124",
+      "transformers": "5.14.1",
+      "smoke": false
+    },
+    "mbert_seed123": {
+      "dir": "outputs_round3/runs/mbert_seed123",
+      "model_id": "bert-base-multilingual-cased",
+      "best_model_path": "outputs_round3/runs/mbert_seed123/best/model.safetensors",
+      "best_model_sha256": "e4823c5477bf6e30d7a52b105c0c42187d8e7a4cf378676f632b3f90c54700c2",
+      "dev_predictions_sha256": "78a70db8f397c280d8ccf962a26da09fe9406bddb5b83a205062b8a620657284",
+      "best_epoch": 3,
+      "best_dev_f1": 0.4096,
+      "total_train_seconds": 20738.2,
+      "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "torch": "2.6.0+cu124",
+      "transformers": "5.14.1",
+      "smoke": false
+    },
+    "mbert_seed7": {
+      "dir": "outputs_round3/runs/mbert_seed7",
+      "model_id": "bert-base-multilingual-cased",
+      "best_model_path": "outputs_round3/runs/mbert_seed7/best/model.safetensors",
+      "best_model_sha256": "5b1994a50eda0d564019ece504ed484a890631f94f5b1af466eb9eff31392930",
+      "dev_predictions_sha256": "ae5218791bd9d23e82f8e49eea86428e5bfaed0c584357b25e818fae9d99e31b",
+      "best_epoch": 2,
+      "best_dev_f1": 0.4424,
+      "total_train_seconds": 20715.2,
+      "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "torch": "2.6.0+cu124",
+      "transformers": "5.14.1",
+      "smoke": false
+    }
+  },
+  "dev_avg_sha256": {
+    "indobert": "1c12c4fa67f57dcd5c12159515d7534983b8e9e5a29fbc560d77470c22f877c4",
+    "xlm_roberta": "66172be6cbf66e7509b5c8936c3d3f179fe428fea65a658f19ca753a6061d011",
+    "mbert": "005a7a476915d43f4282b11dd68364cd5423404439e2a34ec875e7f0a07e5b5e"
+  },
+  "model_weights": {
+    "pola_konsumsi": {
+      "indobert": 0.4163,
+      "xlm_roberta": 0.3974,
+      "mbert": 0.4438
+    },
+    "aktivitas_fisik": {
+      "indobert": 0.3836,
+      "xlm_roberta": 0.3903,
+      "mbert": 0.3903
+    },
+    "akses_layanan_kesehatan": {
+      "indobert": 0.2886,
+      "xlm_roberta": 0.378,
+      "mbert": 0.261
+    },
+    "pengetahuan_pengobatan": {
+      "indobert": 0.5033,
+      "xlm_roberta": 0.5303,
+      "mbert": 0.4944
+    }
+  },
+  "best_individual": {
+    "model": "xlm_roberta",
+    "rule": "Overall F1 dev → ASC F1 dev → urutan IndoBERT, XLM-R, mBERT",
+    "dev_metrics": {
+      "indobert": {
+        "acd": 0.7950151409270907,
+        "asc": 0.33322353974527885,
+        "overall": 0.4247431393657809
+      },
+      "xlm_roberta": {
+        "acd": 0.768352921137796,
+        "asc": 0.41380471380471384,
+        "overall": 0.45899427433408013
+      },
+      "mbert": {
+        "acd": 0.746031746031746,
+        "asc": 0.3713279132791327,
+        "overall": 0.43163479380111514
+      }
+    }
+  },
+  "table17": {
+    "selected_key": "01_Individual_xlm_roberta",
+    "rule": "ASC F1 dev → Overall F1 dev → paling sederhana → kunci",
+    "dev_metrics": {
+      "acd": 0.768352921137796,
+      "asc": 0.41380471380471384,
+      "overall": 0.45899427433408013
+    },
+    "best_T": 0.3,
+    "model_weights_dev": {
+      "pola_konsumsi": {
+        "indobert": 0.4163,
+        "xlm_roberta": 0.3974,
+        "mbert": 0.4438
+      },
+      "aktivitas_fisik": {
+        "indobert": 0.3836,
+        "xlm_roberta": 0.3903,
+        "mbert": 0.3903
+      },
+      "akses_layanan_kesehatan": {
+        "indobert": 0.2886,
+        "xlm_roberta": 0.378,
+        "mbert": 0.261
+      },
+      "pengetahuan_pengobatan": {
+        "indobert": 0.5033,
+        "xlm_roberta": 0.5303,
+        "mbert": 0.4944
+      }
+    },
+    "n_schemes": 69,
+    "grid_file": "outputs_round3/dev_choices/table17_grid_dev.csv"
+  },
+  "dev_reference": {
+    "ensemble": {
+      "Hard Voting": {
+        "acd": 0.760570946205203,
+        "asc": 0.35389610389610393,
+        "overall": 0.42234762089802724
+      },
+      "Weighted Soft Voting": {
+        "acd": 0.7697797559665414,
+        "asc": 0.3512573568753344,
+        "overall": 0.424880348339271
+      }
+    },
+    "n_flagged_dev": 34,
+    "disagreement_pct": {
+      "indobert": {
+        "indobert": 0.0,
+        "xlm_roberta": 10.4167,
+        "mbert": 9.5833
+      },
+      "xlm_roberta": {
+        "indobert": 10.4167,
+        "xlm_roberta": 0.0,
+        "mbert": 8.75
+      },
+      "mbert": {
+        "indobert": 9.5833,
+        "xlm_roberta": 8.75,
+        "mbert": 0.0
+      }
+    }
+  },
+  "ablation_dev_file": "outputs_round3/dev_choices/ablation_v1_v6_dev.csv",
+  "data_sha256": {
+    "train_pairs.csv": "3a930e7ab43608c31e57d4a913db9e3431c427d450c66f2021cbe7eef37a3458",
+    "silver_labeled_s15.csv": "b525c713c359f87b1e99d95660a325d2da85bb183f5345750dab5edaad369735",
+    "dev_pairs.csv": "6a00462f291080227a5a0a856128aed8e3548d74f21c0f8496fa3a711722b96a",
+    "tweets_preprocessed.csv": "87a2b09ecbf2a2fe8eef3f0c542f6c0e5718f8923cbb1dfb0b57f83e5cb5f396"
+  },
+  "code_sha256": {
+    "R3_04_test_inference.ipynb": "5fd5a62d47262f1ac0442e53705f174d27f2942e775e1b9c1de4162cc0d32c5b",
+    "R3_05_llm_calls.ipynb": "1afdda364d0b585473b24552c8f60b3ca3e77d3a94ed73b1c6cc3df92f8ab0e4",
+    "R3_06_evaluation.ipynb": "975ebed11c6f272446b5399be2530f5e890d56854e0a365d5633846649262637",
+    "R3_07_router_analysis.ipynb": "9dd0ca459c3beee8ef4eb2a4188a4edbd10b64049609c04a221f621aa6053e5e",
+    "config.py": "68bf845915402d5a476ddbfaf1266000632b3d57f86999e85979a8305143efb3",
+    "r3_lib.py": "bbe85f48d014ed78a0007c403288e9cacaa4df8606c91bd97192f81040790093",
+    "r3_eval.py": "48a7885a957fe10a262743ca568c62978a206c770e48ff3ada6961cdfffe5527",
+    "legacy_code/manifest.json": "c9400c066a9dd2a990f90b33beebfbfca667b505bd6966f30263e855f2e1f2ea",
+    "revision/revision_utils.py": "59125ce517343bfba5b3647207f9316fd6fc367a20707a3a676ddbee1a419e14"
+  },
+  "environment": {
+    "python": "3.12.10",
+    "platform": "Windows-11-10.0.26100-SP0",
+    "numpy": "2.3.3",
+    "pandas": "2.3.3",
+    "torch": "2.6.0+cu124",
+    "cuda_available": true,
+    "transformers": "5.14.1",
+    "sklearn": "1.8.0",
+    "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+    "gpu_memory_gb": 6.4,
+    "cuda": "12.4",
+    "cudnn": 90100
+  },
+  "amendments": [
+    {
+      "at": "2026-10-30T11:59:30+00:00",
+      "what": "LLM_MODEL qwen3-max-2026-01-23 -> qwen3.7-max-2026-06-08",
+      "reason": "qwen3-max-2026-01-23 ditarik penyedia (404 model_not_found); revisi_round3/diagnosis_llm.md, ganti_model_llm.md, Log perubahan rencana_latih_ulang.md",
+      "before_llm_test_results": true,
+      "code_sha256_changed": {
+        "R3_05_llm_calls.ipynb": {
+          "lama": "a34d9b0ec8f2c8784738a189c6d21b6f27135c7abcaee8586da9e1bd8d088fb3",
+          "baru": "1afdda364d0b585473b24552c8f60b3ca3e77d3a94ed73b1c6cc3df92f8ab0e4"
+        },
+        "R3_06_evaluation.ipynb": {
+          "lama": "8e2c56631fbf2bb58a5e26d8c55abfe996dc6fe96ea1c7aaed5da896e18f0f68",
+          "baru": "975ebed11c6f272446b5399be2530f5e890d56854e0a365d5633846649262637"
+        },
+        "config.py": {
+          "lama": "9a04f3eefc4bf38741097221ce08ac568463147373b196bec322a65bb90e2b11",
+          "baru": "68bf845915402d5a476ddbfaf1266000632b3d57f86999e85979a8305143efb3"
+        }
+      },
+      "unchanged": "R3_04 (kode & keluaran), R3_07, r3_lib.py, r3_eval.py, legacy_code, data, checkpoint"
+    }
+  ]
+}

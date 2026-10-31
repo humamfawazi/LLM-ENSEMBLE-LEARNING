@@ -1,0 +1,12 @@
+﻿dari,ke,n,benar_sesudah,benar_sebelum
+netral,tidak_disebutkan,14,12,1
+negatif,tidak_disebutkan,5,5,0
+negatif,netral,5,2,2
+netral,positif,4,4,0
+negatif,positif,4,4,0
+tidak_disebutkan,netral,2,2,0
+netral,negatif,2,1,1
+positif,tidak_disebutkan,2,2,0
+negatif,negatif,1,0,0
+netral,netral,1,1,1
+positif,netral,1,1,0
